@@ -27,7 +27,7 @@ echo "Sanitized"
 
 echo "Deleting metadata with mat2..."
 
-mat2 "$UUID.pdf"
+mat2 --lightweight "$UUID.pdf"
 
 mv "$UUID.cleaned.pdf" "$1"
 rm "$UUID.pdf"
